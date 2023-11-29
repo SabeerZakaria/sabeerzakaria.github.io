@@ -34,6 +34,7 @@ html {
   background-color: #43697100;
   border-bottom-left-radius: 5%;
   border-bottom-right-radius: 5%;
+  padding: 2rem;
   z-index: 5;
 }
 
@@ -112,21 +113,25 @@ html {
 }
 
 .logo {
-  margin-top: 0.75rem;
   z-index: 51;
 }
 
 .logo img {
-  width: 15rem;
-  height: 4rem;
+  width: 20rem;
+  height: 5rem;
   border-radius: 40px;
 }
 
 .navbar-name {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #052733;
   padding: 1.35rem;
+  transition: 0.4s;
+}
+
+.navbar-name:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 /*End of Navbar*/
