@@ -21,7 +21,7 @@ $(document).ready(function () {
 
   var typed = new Typed(".typed", {
     strings: [
-      "Full-Stack SEO pro.",
+      "Full-Stack SEO Professional.",
       "Front-End Web-developer.",
       "Web Designer.",
     ],
