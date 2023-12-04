@@ -313,7 +313,6 @@ html {
   text-decoration: none;
 }
 
-
 .my-image {
   text-align: center;
   padding-top: 5rem;
@@ -387,21 +386,16 @@ html {
   font-size: 2rem;
   align-items: center;
   color: #dfdcbd;
- 
 }
 
 .tab-contents p {
   color: #dfdcbd;
   text-align: center;
   font-weight: 200;
- 
-  
 }
 
 .tab-contents p span {
   font-weight: bold;
-
- 
 }
 
 .tab-contents {
@@ -878,7 +872,7 @@ html {
   .squareContent h2 {
     font-size: 30px;
   }
-  .squareContent h3{
+  .squareContent h3 {
     font-size: 12px;
   }
 }
@@ -1012,6 +1006,14 @@ html {
   }
 }
 
+@media (max-width: 550px) {
+  .main{
+    font-size: 6.75rem;
+    padding: 2rem;
+    margin: 0;
+  }
+}
+
 @media (max-width: 400px) {
   .animation h1 span {
     font-size: 2rem;
@@ -1029,7 +1031,7 @@ html {
   .profession {
     font-size: 1.5rem;
   }
-  .section-1{
+  .section-1 {
     padding: 1rem;
   }
   .description-me {
@@ -1052,11 +1054,10 @@ html {
     padding: 0;
   }
 
- 
-.tab-contents p{
-  font-size: 1.5rem;
-  text-align: justify;
-}
+  .tab-contents p {
+    font-size: 1.5rem;
+    text-align: justify;
+  }
   .squareItem {
     width: 60vw;
   }
@@ -1104,11 +1105,10 @@ html {
     position: absolute;
     bottom: 0rem;
     right: 0rem;
-  
     font-size: 1.25rem;
-  
     color: #fff;
-  
     z-index: 100;
   }
 }
+
+
