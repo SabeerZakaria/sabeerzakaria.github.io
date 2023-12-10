@@ -878,6 +878,15 @@ html {
 }
 
 @media (max-width: 767px) {
+  .main{
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profession {
+    font-size: 1.75rem;
+  }
   .floating-bg {
     width: 150vw;
   }
@@ -1008,9 +1017,13 @@ html {
 
 @media (max-width: 550px) {
   .main{
-    font-size: 6.75rem;
-    padding: 2rem;
+    font-size: 5rem;
+    padding: 0;
     margin: 0;
+  }
+
+  .profession {
+    font-size: 1.75rem;
   }
 }
 
