@@ -550,7 +550,7 @@ html {
   font-size: 2rem;
   color: #eeedea;
   padding: 1rem 8rem;
-  text-align: center;
+  text-align: justify;
   width: 50vw;
 }
 
@@ -567,16 +567,7 @@ html {
   text-decoration: none;
 }
 
-.logo {
-  position: relative;
-  text-align: center;
-}
 
-.logo i {
-  font-size: 4rem;
-  color: #483793;
-  text-shadow: 0.1rem 0.1rem 0.2rem #ddd, -0.1rem -0.1rem 0.2rem #ddd;
-}
 
 .other-services-division {
   display: flex;
