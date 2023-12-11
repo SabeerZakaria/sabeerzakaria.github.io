@@ -1016,6 +1016,10 @@ html {
   .profession {
     font-size: 1.75rem;
   }
+
+  .conversion-set{
+    text-align: center;
+  }
 }
 
 @media (max-width: 400px) {
