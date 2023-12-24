@@ -538,31 +538,46 @@ html {
   text-align: justify;
 }
 
-.button {
-  color: #eeedea;
-  border-radius: 5rem;
-  display: flex;
-  justify-content: space-around;
-  height: 10vh;
-}
-
 .conversion-set {
+  width: 100vw;
   font-size: 2rem;
   color: #eeedea;
   padding: 1rem 8rem;
   text-align: justify;
-  width: 50vw;
 }
+.conversion-set p {
+  text-align: center;
+}
+
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #eeedea;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+}
+
+.button p {
+  font-size: 1.5rem;
+  padding: 0.35rem;
+  align-items: center;
+  margin: 0;
+} 
 
 .button button {
   border: 1px solid #eeedea;
   background-color: rgba(0, 0, 0, 0.0001);
-  width: 25rem;
-  height: 5rem;
+  width: 20rem;
+  height: 8rem;
   border-radius: 5rem;
 }
 .button a {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   color: #eeedea;
   text-decoration: none;
 }
@@ -788,6 +803,7 @@ html {
   justify-content: center;
   align-items: center;
   transition: background-color 0.5s;
+  text-decoration: none;
   z-index: 100;
 }
 
@@ -814,7 +830,7 @@ html {
   }
 
   .seo-first-text img {
-    width: 100%;
+    width: 110vw;
   }
 
   .seo-monologue {
@@ -831,10 +847,13 @@ html {
     width: 100%;
   }
   .conversion-set {
-    width: 100%;
-    padding: 0;
+    width: 40rem;
+    padding:0 8.75rem;
   }
-
+  .button {
+    justify-content: space-between;
+    padding: 0 8.75rem;
+  }
   .other-services-division {
     position: relative;
     display: flex;
@@ -991,6 +1010,44 @@ html {
   .animation h1 span {
     font-size: 3rem;
   }
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .conversion-set{
+    width: fit-content;
+    padding: 0 25rem;
+    text-align: center;
+  }
+  .other-services-part-1{
+    padding: 5rem;
+  }
+  .other-services-part-2{
+    padding: 5rem;
+  }
+}
+@media(max-width: 700px) {
+  .conversion-set{
+    padding: 0 20rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .conversion-set{
+    padding: 0 15rem;
+  }
+}
+@media(max-width: 500px) {
+  .conversion-set{
+    padding: 0 10rem;
+  }
+}
+@media(max-width: 375px) {
+  .conversion-set{
+    padding: 0 10rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1017,9 +1074,6 @@ html {
     font-size: 1.75rem;
   }
 
-  .conversion-set{
-    text-align: center;
-  }
 }
 
 @media (max-width: 400px) {
