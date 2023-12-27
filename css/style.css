@@ -189,7 +189,7 @@ html {
   width: 100%;
   padding: 5rem;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .floating-bg {
@@ -337,20 +337,57 @@ html {
 
 .about-heading {
   text-align: center;
+  overflow: hidden;
 }
 
-.description-me {
-  font-size: 2rem;
-  margin-top: 2rem;
+.intro {
   color: #dfdcbd;
+  margin-bottom: 8rem;
+  z-index: 100;
+}
+
+.intro h1 {
+  font-size: 5rem;
+}
+
+.intro h3 {
+  font-size: 3rem;
+  font-weight: 200;
   text-align: justify;
 }
-.welcome{
-  font-size: 2.5rem;
-  font-weight: bold;
+
+.intro a {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #59978a;
+  text-decoration: none;
   text-align: center;
-  padding: 1rem;
- 
+}
+@media (max-width: 500px) {
+  .intro h1 {
+    font-size: 4rem;
+  }
+  .intro h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .intro a {
+    font-size: 2rem;
+  }
+}
+
+.fade {
+  animation: fadeInOut 2s ease-in-out infinite; /* Adjust the timing here */
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 .tab-titles {
@@ -359,6 +396,7 @@ html {
   font-weight: bold;
   margin: 3rem;
   padding-left: 2rem;
+  overflow: hidden;
 }
 
 .tab-links {
@@ -390,6 +428,7 @@ html {
   font-size: 2rem;
   align-items: center;
   color: #dfdcbd;
+  overflow: hidden;
 }
 
 .tab-contents p {
@@ -553,7 +592,6 @@ html {
   text-align: center;
 }
 
-
 .button {
   display: flex;
   flex-direction: column;
@@ -571,22 +609,20 @@ html {
   padding: 0.35rem;
   align-items: center;
   margin: 0;
-} 
+}
 
 .button button {
   border: 1px solid #eeedea;
   background-color: rgba(0, 0, 0, 0.0001);
   width: 20rem;
   height: 8rem;
-  border-radius: 5rem;
+  border-radius: 50px;
 }
 .button a {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   color: #eeedea;
   text-decoration: none;
 }
-
-
 
 .other-services-division {
   display: flex;
@@ -654,11 +690,11 @@ html {
 
 /*End of section Services*/
 
-/* section work*/
+/* section projects*/
 
 .section-work {
   padding: 5rem;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -722,7 +758,173 @@ html {
   transform: scale(1.5); /* 50% by 45% of the screen size */
 }
 
-/* end of section work*/
+/* end of section projects*/
+
+/*section Bio*/
+.bio-headline {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #dfdcbd;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-headline h1 {
+  font-size: 3.25rem;
+}
+.bio-headline h3 {
+  font-size: 2.5rem;
+}
+
+.underline {
+  background-color: #59978a;
+  width: 50rem;
+  height: 0.35rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-radius: 20px;
+  padding: 0 3rem;
+}
+
+.description-text {
+  display: flex;
+  flex-direction: column;
+  color: #dfdcbd;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20rem;
+}
+
+.description-text img {
+  border-radius: 250px;
+  width: 350px;
+}
+
+.description-text p {
+  margin-bottom: 0;
+  text-align: justify;
+  font-weight: 200;
+}
+
+.description-text hr {
+  color: #59978a;
+}
+
+.description-text blockquote {
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+}
+@media (max-width: 950px) {
+  .description-text {
+    padding: 0 15rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .description-text {
+    padding: 0 12rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .description-text {
+    padding: 0 10rem;
+  }
+
+  .description-text blockquote {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .description-text {
+    padding: 0 8rem;
+  }
+  .underline {
+    width: 47rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .description-text {
+    padding: 0 6rem;
+  }
+
+  .bio-headline h3 {
+    font-size: 2rem;
+  }
+
+  .underline {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .description-text {
+    font-size: 1.5rem;
+    padding: 0 4rem;
+  }
+
+  .description-text img {
+    border-radius: 250px;
+    width: 250px;
+  }
+
+  .description-text blockquote {
+    font-size: 2rem;
+  }
+  .bio-headline h1 {
+    font-size: 2.75rem;
+  }
+
+  .bio-headline h3 {
+    font-size: 1.5rem;
+  }
+
+  .underline {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .description-text {
+    font-size: 1.25rem;
+    padding: 0 3rem;
+  }
+
+  .description-text img {
+    border-radius: 250px;
+    width: 250px;
+  }
+
+  .bio-headline h1 {
+    font-size: 2.5rem;
+  }
+
+  .bio-headline h3 {
+    font-size: 1.25rem;
+  }
+
+  .underline {
+    width: 25rem;
+  }
+}
+@media (max-width: 300px) {
+  .description-text {
+    font-size: 1.1rem;
+    padding: 0 2.5rem;
+  }
+
+  .description-text img {
+    border-radius: 250px;
+    width: 200px;
+  }
+}
+
+/*End of section Bio*/
 
 /* Section 4 contact*/
 .section-4 {
@@ -852,7 +1054,7 @@ html {
   }
   .conversion-set {
     width: 40rem;
-    padding:0 8.75rem;
+    padding: 0 8.75rem;
   }
   .button {
     justify-content: space-between;
@@ -892,7 +1094,7 @@ html {
 }
 
 @media (max-width: 767px) {
-  .main{
+  .main {
     font-size: 5rem;
     padding: 0;
     margin: 0;
@@ -1020,36 +1222,36 @@ html {
     justify-content: center;
     align-items: center;
   }
-  .conversion-set{
+  .conversion-set {
     width: fit-content;
     padding: 0 25rem;
     text-align: center;
   }
-  .other-services-part-1{
+  .other-services-part-1 {
     padding: 5rem;
   }
-  .other-services-part-2{
+  .other-services-part-2 {
     padding: 5rem;
   }
 }
-@media(max-width: 700px) {
-  .conversion-set{
+@media (max-width: 700px) {
+  .conversion-set {
     padding: 0 20rem;
   }
 }
 
-@media(max-width: 600px) {
-  .conversion-set{
+@media (max-width: 600px) {
+  .conversion-set {
     padding: 0 15rem;
   }
 }
-@media(max-width: 500px) {
-  .conversion-set{
+@media (max-width: 500px) {
+  .conversion-set {
     padding: 0 10rem;
   }
 }
-@media(max-width: 375px) {
-  .conversion-set{
+@media (max-width: 375px) {
+  .conversion-set {
     padding: 0 10rem;
   }
 }
@@ -1068,7 +1270,7 @@ html {
 }
 
 @media (max-width: 550px) {
-  .main{
+  .main {
     font-size: 5rem;
     padding: 0;
     margin: 0;
@@ -1077,7 +1279,6 @@ html {
   .profession {
     font-size: 1.75rem;
   }
-
 }
 
 @media (max-width: 400px) {
@@ -1176,5 +1377,3 @@ html {
     z-index: 100;
   }
 }
-
-

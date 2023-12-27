@@ -22,7 +22,7 @@ $(document).ready(function () {
   var typed = new Typed(".typed", {
     strings: [
       "Full-Stack SEO Professional.",
-      "Front-End Web-developer.",
+      "Web-developer.",
       "Web Designer.",
     ],
     typeSpeed: 70,
