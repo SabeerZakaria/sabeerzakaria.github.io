@@ -280,7 +280,7 @@ html {
 }
 
 .hamburger.is-active:after {
-  transform: rotate(45deg) translate(-8px, -7px);
+  transform: rotate(45deg) translate(-8px, -5px);
 }
 
 .mobile-nav {
@@ -294,6 +294,8 @@ html {
   background-color: rgba(41, 72, 126, 0.897);
   padding-top: 80px;
   transition: 0.4s;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .mobile-nav.is-active {
@@ -363,9 +365,15 @@ html {
   text-decoration: none;
   text-align: center;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 950px) {
   .intro h1 {
     font-size: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  .intro h1 {
+    font-size: 3.5rem;
   }
   .intro h3 {
     font-size: 2rem;
@@ -373,6 +381,11 @@ html {
   }
   .intro a {
     font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .intro h1 {
+    font-size: 3rem;
   }
 }
 
@@ -601,7 +614,7 @@ html {
   border-radius: 5rem;
   display: flex;
   justify-content: space-around;
-  height: 20vh;
+  height: 24vh;
 }
 
 .button p {
@@ -1111,9 +1124,7 @@ html {
     width: 35vw;
   }
 
-  .hide {
-    display: none;
-  }
+ 
 
   .navbar {
     display: none;
@@ -1216,12 +1227,7 @@ html {
   .animation h1 span {
     font-size: 3rem;
   }
-  .button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+
   .conversion-set {
     width: fit-content;
     padding: 0 25rem;
